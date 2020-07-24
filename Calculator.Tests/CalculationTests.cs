@@ -6,13 +6,15 @@ namespace Calculator.Tests
     [TestClass]
     public class CalculationTests
     {
+
+        public int firstNumber = 10;
+        public int secondNumber = 2;
+
         [TestMethod]
         public void CanAddNumbers()
         { 
             // Arrange
-            var firstNumber = 2;
-            var secondNumber = 5;
-            var expectedSum = 7;
+            var expectedSum = 12;
 
             // Act
             var sum = Calculation.AddNumbers(firstNumber, secondNumber);
@@ -25,9 +27,7 @@ namespace Calculator.Tests
         public void CanSubtractNumbers()
         { 
             // Arrange
-            var firstNumber = 13;
-            var secondNumber = 8;
-            var expectedSum = 5;
+            var expectedSum = 8;
 
             // Act
             var sum = Calculation.SutractNumbers(firstNumber, secondNumber);
@@ -40,9 +40,7 @@ namespace Calculator.Tests
         public void CanMultiplyNumbers()
         { 
             // Arrange
-            var firstNumber = 5;
-            var secondNumber = 2;
-            var expectedSum = 10;
+            var expectedSum = 20;
 
             // Act
             var sum = Calculation.MultiplyNumbers(firstNumber, secondNumber);
@@ -55,8 +53,6 @@ namespace Calculator.Tests
         public void CanDivideNumbers()
         { 
             // Arrange
-            var firstNumber = 10;
-            var secondNumber = 2;
             var expectedSum = 5;
 
             // Act

@@ -1,2 +1,6 @@
+Calculator.Tests.CalculationTests.CanAddNumbers
+Calculator.Tests.CalculationTests.CanSubtractNumbers
+Calculator.Tests.CalculationTests.CanMultiplyNumbers
+Calculator.Tests.CalculationTests.CanDivideNumbers
 Calculator.Tests.ProgramTests.GreetingContainsUsername
 Calculator.Tests.ProgramTests.BlankUsernameReturnsGenericGreeting
