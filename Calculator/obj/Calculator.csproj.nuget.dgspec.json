@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj": {}
+    "c:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj": {
+    "c:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "c:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj",
+        "projectPath": "c:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\gemmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\obj\\",
+        "outputPath": "c:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gemmi\\AppData\\Roaming\\NuGet\\NuGet.Config"
