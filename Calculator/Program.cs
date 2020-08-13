@@ -8,14 +8,20 @@ namespace Calculator
         static void Main(string[] args)
         {
             WriteLine(User.GreetUser(User.GetUsername()));
-            
+
+            WriteLine("\nChoose a calculation type from the list below: \n");
+
+            string[] lettersForCalculation = {"A for Addition", "B for Subtraction", "C for Multiplication", "D for Division"};
+            foreach(string v in lettersForCalculation) 
+            {
+                WriteLine(v);
+            }
+
+            var calculationChoice = ReadLine();
+
+            WriteLine(calculationChoice);           
 
             /*
-                - output greeting
-                - 'A' for Add
-                - 'S' for Subtract
-                - 'D' for divide
-                - 'M' for multiply
                 - 'Enter two numbers seperated by a comma'
                 - Output 'Sum of Numbers: ' 
             */ 
