@@ -3,10 +3,10 @@ Simple Calculator Console App created using C#
 
 Features Implemented
 - Takes a username input and outputs a greeting to the user
+- Add whole numbers
 
 Features in progress
 - I want to be able to add numbers
-  - Whole numbers
   - Floating point numbers
   - Negative numbers
   - Validation message for characters
