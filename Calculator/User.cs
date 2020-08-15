@@ -12,10 +12,11 @@ namespace Calculator
 
         public static string GreetUser(string username)
         {
-            return $"Greetings {username}! I am a calculator, here to solve all your numeric needs!";
+            var greeting = $"Greetings {username}! I am a calculator, here to solve all your numeric needs!";
+            WriteLine(greeting);
+
+            return greeting;
         }
-
-
     }
 }
 

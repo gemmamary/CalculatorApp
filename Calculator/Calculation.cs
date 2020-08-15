@@ -4,22 +4,22 @@ namespace Calculator
 {
     public class Calculation
     {
-        public static int AddNumbers(int first, int second) 
+        public static double AddNumbers(double first, double second) 
         {
             return first + second;
         } 
 
-        public static int SutractNumbers(int first, int second) 
+        public static double SutractNumbers(double first, double second) 
         {
             return first - second;
         } 
 
-        public static int MultiplyNumbers(int first, int second) 
+        public static double MultiplyNumbers(double first, double second) 
         {
             return first * second;
         }
 
-        public static int DivideNumbers(int first, int second) 
+        public static double DivideNumbers(double first, double second) 
         {
             return first / second;
         }
