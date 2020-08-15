@@ -7,17 +7,10 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            WriteLine(User.GreetUser(User.GetUsername()));
-
-            WriteLine("\nChoose a calculation type from the list below: \n");
-
-            string[] lettersForCalculation = {"A for Addition", "B for Subtraction", "C for Multiplication", "D for Division"};
-            foreach(string v in lettersForCalculation) 
-            {
-                WriteLine(v);
-            }
-
-            var calculationChoice = ReadLine();
+            var currentUser = User.GetUsername();
+            WriteLine(User.GreetUser(currentUser));
+            
+            Operations.GetCalculationType();
 
             WriteLine(calculationChoice);  
 
