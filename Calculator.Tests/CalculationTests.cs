@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Calculator;
+using static Calculator.Calculation;
 
 namespace Calculator.Tests
 {
@@ -24,7 +25,7 @@ namespace Calculator.Tests
         { 
             var expectedSum = 8;
 
-            var sum = Calculation.SutractNumbers(firstNumber, secondNumber);
+            var sum = Calculation.SubtractNumbers(firstNumber, secondNumber);
 
             Assert.AreEqual(expectedSum, sum, "That sum is incorrect");
         }

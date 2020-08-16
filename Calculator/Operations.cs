@@ -1,5 +1,6 @@
 using System;
 using static System.Console;
+using static Calculator.Calculation;
 
 namespace Calculator
 {
@@ -41,7 +42,19 @@ namespace Calculator
 
             if(calculationChoice == "A")
             {
-                sum = Calculation.AddNumbers(firstNumber, secondNumber);
+                sum = AddNumbers(firstNumber, secondNumber);
+            }
+            else if (calculationChoice == "B")
+            {
+                sum = SubtractNumbers(firstNumber, secondNumber);
+            }
+            else if (calculationChoice == "C")
+            {
+                sum = MultiplyNumbers(firstNumber, secondNumber);
+            }
+            else if (calculationChoice == "D")
+            {
+                sum = DivideNumbers(firstNumber, secondNumber);
             }
                      
             return sum;

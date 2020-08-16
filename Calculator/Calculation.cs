@@ -9,7 +9,7 @@ namespace Calculator
             return first + second;
         } 
 
-        public static double SutractNumbers(double first, double second) 
+        public static double SubtractNumbers(double first, double second) 
         {
             return first - second;
         } 
