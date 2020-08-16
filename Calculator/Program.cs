@@ -10,11 +10,13 @@ namespace Calculator
             var currentUser = User.GetUsername();
             User.GreetUser(currentUser);
 
-            var calculationChoice = Operations.GetCalculationType();
-
-            WriteLine(calculationChoice); 
+            var calculationChoice = Operations.GetCalculationType(); 
             var firstNumber = Operations.GetFirstNumber(); 
             var secondNumber = Operations.GetSecondNumber(); 
+
+            var sumOfNumbers = Operations.CalculateSumOfNumbers(calculationChoice, firstNumber, secondNumber);
+
+            WriteLine($"Sum: {sumOfNumbers}");
 
 
             /*
