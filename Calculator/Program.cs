@@ -16,13 +16,7 @@ namespace Calculator
 
             var sumOfNumbers = Operations.CalculateSumOfNumbers(calculationChoice, firstNumber, secondNumber);
 
-            WriteLine($"Sum: {sumOfNumbers}");
-
-
-            /*
-                - 'Enter two numbers seperated by a comma'
-                - Output 'Sum of Numbers: ' 
-            */ 
+            WriteLine($"Sum: {sumOfNumbers}"); 
         }
     }
 }
