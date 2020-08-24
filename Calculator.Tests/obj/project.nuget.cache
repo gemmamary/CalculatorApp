@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cm8wBpDWIGlyXotVnsxCvqr/8EliPw5xsUMIn0QwWFQCpNiFjewimdWxasOBLp9ky5JzLpUElcF3GrAofgFIuQ==",
+  "dgSpecHash": "UKvYJFG6s5rDdqjjxaWkWqNxbp+DSaQX8HkEE39RTLH2Knk5WoJqTgB0wies9Q8EC35ZQozgShpyG7bVOUNKbA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator.Tests\\Calculator.Tests.csproj",
+  "projectFilePath": "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator.Tests\\Calculator.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gemmi\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\gemmi\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

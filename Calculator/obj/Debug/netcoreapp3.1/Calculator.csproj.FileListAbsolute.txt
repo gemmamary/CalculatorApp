@@ -17,7 +17,6 @@ c:\Users\gemmi\source\repos\CalculatorApp\Calculator\bin\Debug\netcoreapp3.1\Cal
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.dev.json
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\bin\Debug\netcoreapp3.1\Calculator.dll
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\bin\Debug\netcoreapp3.1\Calculator.pdb
-c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.CoreCompileInputs.cache
