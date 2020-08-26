@@ -47,5 +47,21 @@ namespace Calculator.Tests.CalculationTests
             var sum = Calculation.DivideNumbers(23.43, 2.5);
             Assert.AreEqual(expectedSum, sum);
         }
+
+        [TestMethod]
+        public void CanDivideByZero()
+        {
+            var expectedSum = 10;
+            var sum = Calculation.DivideNumbers(10, 0);
+            Assert.AreEqual(expectedSum, sum);
+        }
+
+        [TestMethod]
+        public void CanDivideZeroByNumber()
+        {
+            var expectedSum = 0;
+            var sum = Calculation.DivideNumbers(0, 10);
+            Assert.AreEqual(expectedSum, sum);
+        }
     }
 }

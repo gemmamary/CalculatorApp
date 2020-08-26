@@ -21,7 +21,18 @@ namespace Calculator
 
         public static double DivideNumbers(double first, double second) 
         {
-            return first / second;
+            double sum = 0;
+
+            if(second == 0)
+            {
+                sum = first;
+            }
+            else
+            {
+                sum = first / second;
+            }
+
+            return sum;
         }
 
     }
