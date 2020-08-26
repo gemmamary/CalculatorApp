@@ -184,8 +184,11 @@ c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\bin\Debug\netcoreapp3
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.csprojAssemblyReference.cache
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.AssemblyInfoInputs.cache
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.AssemblyInfo.cs
-c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.csproj.CoreCompileInputs.cache
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.csproj.CopyComplete
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.dll
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.pdb
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.genruntimeconfig.cache
+C:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\bin\Debug\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\gemmi\source\repos\CalculatorApp\Calculator.Tests\obj\Debug\netcoreapp3.1\Calculator.Tests.csproj.CoreCompileInputs.cache

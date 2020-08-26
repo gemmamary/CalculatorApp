@@ -1635,9 +1635,27 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "TestRunner/1.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "xunit.runner.visualstudio/2.4.3": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
+        }
+      },
       "Calculator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "TestRunner": "1.10.0"
+        },
         "compile": {
           "bin/placeholder/Calculator.dll": {}
         },
@@ -5716,6 +5734,64 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "TestRunner/1.10.0": {
+      "sha512": "zugQKiJbrDZDdjAQFYuyUH7qpWFf0HEvfoe/sO/8oIJlwJcdIKldSuffML0YXhLhl0YaVsFz7m79bfKD6Gf3jA==",
+      "type": "package",
+      "path": "testrunner/1.10.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "changelog.md",
+        "lib/net461/_._",
+        "lib/netcoreapp2.0/_._",
+        "license.txt",
+        "readme.md",
+        "testrunner.1.10.0.nupkg.sha512",
+        "testrunner.nuspec",
+        "tools/net461/testrunner.exe",
+        "tools/net461/testrunner.exe.config",
+        "tools/net461/testrunner.pdb",
+        "tools/netcoreapp2.0/testrunner.deps.json",
+        "tools/netcoreapp2.0/testrunner.dll",
+        "tools/netcoreapp2.0/testrunner.pdb",
+        "tools/netcoreapp2.0/testrunner.runtimeconfig.json",
+        "tools/testrunner.exe",
+        "tools/testrunner.exe.config",
+        "tools/testrunner.pdb"
+      ]
+    },
+    "xunit.runner.visualstudio/2.4.3": {
+      "sha512": "kZZSmOmKA8OBlAJaquPXnJJLM9RwQ27H7BMVqfMLUcTi9xHinWGJiWksa3D4NEtz0wZ/nxd2mogObvBgJKCRhQ==",
+      "type": "package",
+      "path": "xunit.runner.visualstudio/2.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/net452/xunit.abstractions.dll",
+        "build/net452/xunit.runner.reporters.net452.dll",
+        "build/net452/xunit.runner.utility.net452.dll",
+        "build/net452/xunit.runner.visualstudio.props",
+        "build/net452/xunit.runner.visualstudio.testadapter.dll",
+        "build/netcoreapp2.1/xunit.abstractions.dll",
+        "build/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll",
+        "build/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll",
+        "build/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll",
+        "build/netcoreapp2.1/xunit.runner.visualstudio.props",
+        "build/uap10.0.16299/xunit.runner.reporters.netstandard15.dll",
+        "build/uap10.0.16299/xunit.runner.utility.netstandard15.dll",
+        "build/uap10.0.16299/xunit.runner.utility.uwp10.dll",
+        "build/uap10.0.16299/xunit.runner.utility.uwp10.pri",
+        "build/uap10.0.16299/xunit.runner.visualstudio.props",
+        "build/uap10.0.16299/xunit.runner.visualstudio.targets",
+        "build/uap10.0.16299/xunit.runner.visualstudio.uwp.testadapter.dll",
+        "build/uap10.0.16299/xunit.runner.visualstudio.uwp.testadapter.pri",
+        "logo-512-transparent.png",
+        "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
+        "xunit.runner.visualstudio.nuspec"
+      ]
+    },
     "Calculator/1.0.0": {
       "type": "project",
       "path": "../Calculator/Calculator.csproj",
@@ -5728,7 +5804,9 @@
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
-      "coverlet.collector >= 1.2.0"
+      "TestRunner >= 1.10.0",
+      "coverlet.collector >= 1.2.0",
+      "xunit.runner.visualstudio >= 2.4.3"
     ]
   },
   "packageFolders": {
@@ -5789,9 +5867,19 @@
             "target": "Package",
             "version": "[16.5.0, )"
           },
+          "TestRunner": {
+            "target": "Package",
+            "version": "[1.10.0, )"
+          },
           "coverlet.collector": {
             "target": "Package",
             "version": "[1.2.0, )"
+          },
+          "xunit.runner.visualstudio": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.4.3, )"
           }
         },
         "imports": [

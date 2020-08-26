@@ -6,7 +6,7 @@ using System.Text;
 namespace Calculator.Tests.CalculationTests
 {
     [TestClass]
-    class MultiplicationTests
+    public class MultiplicationTests
     {
         [TestMethod]
         public void CanMultiplyNumbers()

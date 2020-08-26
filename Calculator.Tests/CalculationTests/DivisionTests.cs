@@ -6,7 +6,7 @@ using System.Text;
 namespace Calculator.Tests.CalculationTests
 {
     [TestClass]
-    class DivisionTests
+    public class DivisionTests
     {
         [TestMethod]
         public void CanDivideNumbers()

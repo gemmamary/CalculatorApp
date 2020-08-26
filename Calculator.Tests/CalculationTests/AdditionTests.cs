@@ -3,7 +3,7 @@
 namespace Calculator.Tests.CalculationTests
 {
     [TestClass]
-    class AdditionTests
+    public class AdditionTests
     {
         [TestMethod]
         public void CanAddPositiveNumbers()

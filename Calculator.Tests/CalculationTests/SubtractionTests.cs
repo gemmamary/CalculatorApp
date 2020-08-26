@@ -1,12 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Calculator.Tests.CalculationTests
 {
     [TestClass]
-    class SubtractionTests
+    public class SubtractionTests
     {
         [TestMethod]
         public void CanSubtractNumbers()
