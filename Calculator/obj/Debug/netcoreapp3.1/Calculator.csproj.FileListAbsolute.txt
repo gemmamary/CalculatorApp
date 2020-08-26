@@ -23,3 +23,4 @@ c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Cal
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
 c:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache
+C:\Users\gemmi\source\repos\CalculatorApp\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
