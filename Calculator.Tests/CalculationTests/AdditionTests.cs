@@ -36,5 +36,13 @@ namespace Calculator.Tests.CalculationTests
             var sum = Calculation.AddNumbers(8, -4);
             Assert.AreEqual(expectedSum, sum);
         }
+
+        [TestMethod]
+        public void CanAddDecimalNumbers()
+        {
+            var expectedSum = 18.576;
+            var sum = Calculation.AddNumbers(8.342, 10.234);
+            Assert.AreEqual(expectedSum, sum);
+        }
     }
 }

@@ -39,5 +39,13 @@ namespace Calculator.Tests.CalculationTests
             var sum = Calculation.DivideNumbers(8, -4);
             Assert.AreEqual(expectedSum, sum);
         }
+
+        [TestMethod]
+        public void CanDivideDecimalNumbers()
+        {
+            var expectedSum = 9.372;
+            var sum = Calculation.DivideNumbers(23.43, 2.5);
+            Assert.AreEqual(expectedSum, sum);
+        }
     }
 }

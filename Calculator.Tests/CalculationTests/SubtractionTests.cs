@@ -37,5 +37,14 @@ namespace Calculator.Tests.CalculationTests
             var sum = Calculation.SubtractNumbers(8, -4);
             Assert.AreEqual(expectedSum, sum);
         }
+
+        [TestMethod]
+        public void CanSubtractDecimalNumbers()
+
+        {
+            var expectedSum = 20.78;
+            var sum = Calculation.SubtractNumbers(43.32, 22.54);
+            Assert.AreEqual(expectedSum, sum);
+        }
     }
 }

@@ -39,5 +39,13 @@ namespace Calculator.Tests.CalculationTests
             var sum = Calculation.MultiplyNumbers(8, -4);
             Assert.AreEqual(expectedSum, sum);
         }
+
+        [TestMethod]
+        public void CanMultiplyDecimalNumbers()
+        {
+            var expectedSum = 10.668000000000001;
+            var sum = Calculation.MultiplyNumbers(2.54, 4.2);
+            Assert.AreEqual(expectedSum, sum);
+        }
     }
 }
