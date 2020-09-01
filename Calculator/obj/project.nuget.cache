@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EtymLaE8d9pjqrXWmgzyYeHHbke0UcUDEy9RPAqq9xk1ka1esoQ9x7mXpuDVu2OWxSOodOIBerZ40vEqM5pVhA==",
+  "dgSpecHash": "vzCUukmtZQkQiwxpuQFcdWJAZN4moNhKnb01QpNauM/0yCvQTrQnsRv6ZdEqrEmGuE0lc+BsxiAw5Ng6NrfoiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gemmi\\source\\repos\\CalculatorApp\\Calculator\\Calculator.csproj",
+  "projectFilePath": "/Users/juliao/Projects/Reviews/Gemma/CalculatorApp/Calculator/Calculator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gemmi\\.nuget\\packages\\testrunner\\1.10.0\\testrunner.1.10.0.nupkg.sha512",
-    "C:\\Users\\gemmi\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "/Users/juliao/.nuget/packages/testrunner/1.10.0/testrunner.1.10.0.nupkg.sha512",
+    "/Users/juliao/.nuget/packages/xunit.runner.visualstudio/2.4.3/xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }
