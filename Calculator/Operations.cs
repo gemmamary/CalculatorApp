@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using static System.Console;
 using static Calculator.Calculation;
 
@@ -6,39 +9,24 @@ namespace Calculator
 {
     public class Operations
     {
-        public static string GetCalculationType()
-        {
-            WriteLine($"{Environment.NewLine}Choose a calculation type from the list below: ");
-
-            string[] lettersForCalculation = {"A for Addition", "B for Subtraction", "C for Multiplication", "D for Division"};
-            
-            foreach(string v in lettersForCalculation) 
-                WriteLine(v);
-
-            var calculationChoice = ReadLine();
-            return calculationChoice;
-        }
-
         public static double GetFirstNumber()
-        {
-            WriteLine("Type in the the first number and press Enter: ");
+        { 
+            WriteLine($"{Environment.NewLine}Type in the first number and press Enter: ");
             var first = ReadLine();
 
             if(double.TryParse(first, out double value))
             {
-                return value;
+                return value;   
             }
             else
             {
-                WriteLine("That is an invalid number. Please try again.");
                 return GetFirstNumber();
             }
-
         }
 
         public static double GetSecondNumber()
         {
-            WriteLine("Type in the the second number and press Enter: ");
+            WriteLine($"{Environment.NewLine}Type in the the second number and press Enter: ");
             var second = ReadLine();
 
             if (double.TryParse(second, out double value))
@@ -47,33 +35,47 @@ namespace Calculator
             }
             else
             {
-                WriteLine("That is an invalid number. Please try again.");
                 return GetSecondNumber();
             }
-        }  
+        }
 
-        public static double CalculateSumOfNumbers(string calculationChoice, double firstNumber, double secondNumber)
+        public static double CalculateSumOfNumbers(double firstNumber, double secondNumber)
         {
-            double sum = 0; 
+            var calculationChoices = new Dictionary<char, string>()
+            {
+                { 'A', "Addition" },
+                { 'B', "Subtraction" },
+                { 'C', "Multiplication" },
+                { 'D', "Division" }
+            };
 
-            if(calculationChoice == "A")
+            double sum = 0;
+
+            while(sum == 0)
             {
-                sum = AddNumbers(firstNumber, secondNumber);
+                WriteLine($"{Environment.NewLine}Choose a calculation type from the list below: ");
+
+                foreach (KeyValuePair<char, string> choice in calculationChoices.OrderBy(val => val.Key))
+                    WriteLine($"{choice.Key} for {choice.Value}");
+
+                var calculationChoice = Char.ToUpper(ReadKey().KeyChar);
+
+                if (calculationChoices.ContainsKey(calculationChoice))
+                {
+                    sum = calculationChoice switch
+                    {
+                        'A' => AddNumbers(firstNumber, secondNumber),
+                        'B' => SubtractNumbers(firstNumber, secondNumber),
+                        'C' => MultiplyNumbers(firstNumber, secondNumber),
+                        'D' => DivideNumbers(firstNumber, secondNumber),
+                        _ => throw new ArgumentException($"Invalid {nameof(calculationChoice)}"),
+                    };
+                } else
+                {
+                    WriteLine($"{Environment.NewLine}{calculationChoice} is an invalid selection. Please try again. ");
+                }
             }
-            else if (calculationChoice == "B")
-            {
-                sum = SubtractNumbers(firstNumber, secondNumber);
-            }
-            else if (calculationChoice == "C")
-            {
-                sum = MultiplyNumbers(firstNumber, secondNumber);
-            }
-            else if (calculationChoice == "D")
-            {
-                sum = DivideNumbers(firstNumber, secondNumber);
-            }
-                     
             return sum;
-        }          
+        }
     }
 }
