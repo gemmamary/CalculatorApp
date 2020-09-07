@@ -7,9 +7,8 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            var user = new InstanceUser();
-            user.GetUsername();
-            user.GreetUser();
+            var currentUser = User.GetUsername();
+            User.GreetUser(currentUser);
 
             var calculationChoice = Operations.GetCalculationType(); 
             var firstNumber = Operations.GetFirstNumber(); 
