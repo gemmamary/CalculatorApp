@@ -8,7 +8,7 @@ namespace Calculator
     {
         public static string GetCalculationType()
         {
-            WriteLine("\nChoose a calculation type from the list below: \n");
+            WriteLine($"{Environment.NewLine}Choose a calculation type from the list below: ");
 
             string[] lettersForCalculation = {"A for Addition", "B for Subtraction", "C for Multiplication", "D for Division"};
             foreach(string v in lettersForCalculation) 
