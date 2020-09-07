@@ -15,7 +15,7 @@ namespace Calculator
             foreach(string v in lettersForCalculation) 
                 WriteLine(v);
 
-            var calculationChoice = ReadKey().KeyChar;
+            var calculationChoice = ReadLine();
             return calculationChoice;
         }
 
@@ -24,7 +24,16 @@ namespace Calculator
             WriteLine("Type in the the first number and press Enter: ");
             var first = ReadLine();
 
-            return double.Parse(first);
+            if(double.TryParse(first, out double value))
+            {
+                return value;
+            }
+            else
+            {
+                WriteLine("That is an invalid number. Please try again.");
+                return GetFirstNumber();
+            }
+
         }
 
         public static double GetSecondNumber()
@@ -32,7 +41,15 @@ namespace Calculator
             WriteLine("Type in the the second number and press Enter: ");
             var second = ReadLine();
 
-            return double.Parse(second);
+            if (double.TryParse(second, out double value))
+            {
+                return value;
+            }
+            else
+            {
+                WriteLine("That is an invalid number. Please try again.");
+                return GetSecondNumber();
+            }
         }  
 
         public static double CalculateSumOfNumbers(string calculationChoice, double firstNumber, double secondNumber)
