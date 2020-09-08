@@ -44,5 +44,13 @@ namespace Calculator.Tests.CalculationTests
             var sum = Calculation.AddNumbers(8.342, 10.234);
             Assert.AreEqual(expectedSum, sum);
         }
+
+        [TestMethod]
+        public void CanAddZeroNumbers()
+        {
+            var expectedSum = 0;
+            var sum = Calculation.AddNumbers(0, 0);
+            Assert.AreEqual(expectedSum, sum);
+        }
     }
 }

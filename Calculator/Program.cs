@@ -9,14 +9,13 @@ namespace Calculator
         {
             var currentUser = User.GetUsername();
             User.GreetUser(currentUser);
-
-            var calculationChoice = Operations.GetCalculationType(); 
+ 
             var firstNumber = Operations.GetFirstNumber(); 
-            var secondNumber = Operations.GetSecondNumber(); 
+            var secondNumber = Operations.GetSecondNumber();
 
-            var sumOfNumbers = Operations.CalculateSumOfNumbers(calculationChoice, firstNumber, secondNumber);
+            var sumOfNumbers = Operations.CalculateSumOfNumbers(firstNumber, secondNumber);
 
-            WriteLine($"Sum: {sumOfNumbers}"); 
+            WriteLine($"{Environment.NewLine}Sum: {sumOfNumbers}"); 
         }
     }
 }
