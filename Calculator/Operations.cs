@@ -16,7 +16,7 @@ namespace Calculator
 
             if(double.TryParse(first, out double value))
             {
-                return value;   
+                return value;
             }
             else
             {
