@@ -50,8 +50,9 @@ namespace Calculator
             };
 
             double sum = 0;
+            bool isFinished = false;
 
-            while(sum == 0)
+            while(!isFinished)
             {
                 WriteLine($"{Environment.NewLine}Choose a calculation type from the list below: ");
 
@@ -70,6 +71,8 @@ namespace Calculator
                         'D' => DivideNumbers(firstNumber, secondNumber),
                         _ => throw new ArgumentException($"Invalid {nameof(calculationChoice)}"),
                     };
+
+                    isFinished = true;
                 } else
                 {
                     WriteLine($"{Environment.NewLine}{calculationChoice} is an invalid selection. Please try again. ");
